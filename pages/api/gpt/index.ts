@@ -3,14 +3,14 @@ import { Configuration, OpenAIApi } from "openai";
 
 export default async function GET(
   req: NextApiRequest,
-  res: NextApiResponse<string>
+  res: NextApiResponse<string | undefined>
 ) {
 
-  const AUTH_KEY = req.headers.authorization.replace('Bearer ', '')
-  const prompt = req.query.prompt;
+  const AUTH_KEY = req?.headers?.authorization?.replace?.('Bearer ', '')
+  const prompt = req?.query?.prompt;
 
   if(AUTH_KEY !== process.env.AUTH_KEY) {
-    res.status(403).json()
+    res.status(403)
     return
   }
 

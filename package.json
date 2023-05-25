@@ -5,7 +5,7 @@
   "scripts": {
     "pre-install": "vercel",
     "deploy": "vercel --prod",
-    "vercel-dev": "vercel dev",
+    "local": "vercel dev",
     "dev": "next dev",
     "build": "next build",
     "lint": "next lint"
