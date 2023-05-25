@@ -28,12 +28,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@types/node", "npm:18.15.0"],\
+            ["@types/node", "npm:20.2.4"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["eslint", "npm:8.35.0"],\
             ["eslint-config-next", "virtual:c2b89f79d4814c2d7ab7e04ec67aaf10b73bf30efba1a2c545edb8fb7b0fad33f624c94e9f60efc8b1e8b7453b6a3e704000d1f6e3ec4d891225f003ee2a5336#npm:13.2.4"],\
             ["next", "virtual:c2b89f79d4814c2d7ab7e04ec67aaf10b73bf30efba1a2c545edb8fb7b0fad33f624c94e9f60efc8b1e8b7453b6a3e704000d1f6e3ec4d891225f003ee2a5336#npm:13.2.4"],\
+            ["openai", "npm:3.2.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c2b89f79d4814c2d7ab7e04ec67aaf10b73bf30efba1a2c545edb8fb7b0fad33f624c94e9f60efc8b1e8b7453b6a3e704000d1f6e3ec4d891225f003ee2a5336#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"],\
@@ -3434,17 +3435,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:18.15.0", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.15.0-f646cf0d9f-d81372276d.zip/node_modules/@types/node/",\
-          "packageDependencies": [\
-            ["@types/node", "npm:18.15.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:20.2.3", {\
           "packageLocation": "./.yarn/cache/@types-node-npm-20.2.3-0289426dd1-576065e8fc.zip/node_modules/@types/node/",\
           "packageDependencies": [\
             ["@types/node", "npm:20.2.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:20.2.4", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.2.4-e04513a79f-6bc45fdc1c.zip/node_modules/@types/node/",\
+          "packageDependencies": [\
+            ["@types/node", "npm:20.2.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4368,6 +4369,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/axe-core-npm-4.7.2-678c3cf6c4-5d86fa0f45.zip/node_modules/axe-core/",\
           "packageDependencies": [\
             ["axe-core", "npm:4.7.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["axios", [\
+        ["npm:0.26.1", {\
+          "packageLocation": "./.yarn/cache/axios-npm-0.26.1-a6641ce4e3-d9eb58ff4b.zip/node_modules/axios/",\
+          "packageDependencies": [\
+            ["axios", "npm:0.26.1"],\
+            ["follow-redirects", "virtual:a6641ce4e3bdcc0997f8f53d9481b67c5d38e21276de8eeee7bf92881685b3ad5600bae416c2af904ceab8132bac649e7efd0af93f18e158e0e65ee05a263d72#npm:1.15.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6902,6 +6913,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["follow-redirects", [\
+        ["npm:1.15.2", {\
+          "packageLocation": "./.yarn/cache/follow-redirects-npm-1.15.2-1ec1dd82be-faa66059b6.zip/node_modules/follow-redirects/",\
+          "packageDependencies": [\
+            ["follow-redirects", "npm:1.15.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:a6641ce4e3bdcc0997f8f53d9481b67c5d38e21276de8eeee7bf92881685b3ad5600bae416c2af904ceab8132bac649e7efd0af93f18e158e0e65ee05a263d72#npm:1.15.2", {\
+          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-1a488024d3/0/cache/follow-redirects-npm-1.15.2-1ec1dd82be-faa66059b6.zip/node_modules/follow-redirects/",\
+          "packageDependencies": [\
+            ["follow-redirects", "virtual:a6641ce4e3bdcc0997f8f53d9481b67c5d38e21276de8eeee7bf92881685b3ad5600bae416c2af904ceab8132bac649e7efd0af93f18e158e0e65ee05a263d72#npm:1.15.2"],\
+            ["@types/debug", null],\
+            ["debug", null]\
+          ],\
+          "packagePeers": [\
+            "@types/debug",\
+            "debug"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["for-each", [\
         ["npm:0.3.3", {\
           "packageLocation": "./.yarn/cache/for-each-npm-0.3.3-0010ca8cdd-6c48ff2bc6.zip/node_modules/for-each/",\
@@ -6917,6 +6950,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/form-data-npm-3.0.1-d080d436e0-b019e8d35c.zip/node_modules/form-data/",\
           "packageDependencies": [\
             ["form-data", "npm:3.0.1"],\
+            ["asynckit", "npm:0.4.0"],\
+            ["combined-stream", "npm:1.0.8"],\
+            ["mime-types", "npm:2.1.35"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/form-data-npm-4.0.0-916facec2d-01135bf867.zip/node_modules/form-data/",\
+          "packageDependencies": [\
+            ["form-data", "npm:4.0.0"],\
             ["asynckit", "npm:0.4.0"],\
             ["combined-stream", "npm:1.0.8"],\
             ["mime-types", "npm:2.1.35"]\
@@ -9639,12 +9682,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["next-13", "workspace:."],\
-            ["@types/node", "npm:18.15.0"],\
+            ["@types/node", "npm:20.2.4"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["eslint", "npm:8.35.0"],\
             ["eslint-config-next", "virtual:c2b89f79d4814c2d7ab7e04ec67aaf10b73bf30efba1a2c545edb8fb7b0fad33f624c94e9f60efc8b1e8b7453b6a3e704000d1f6e3ec4d891225f003ee2a5336#npm:13.2.4"],\
             ["next", "virtual:c2b89f79d4814c2d7ab7e04ec67aaf10b73bf30efba1a2c545edb8fb7b0fad33f624c94e9f60efc8b1e8b7453b6a3e704000d1f6e3ec4d891225f003ee2a5336#npm:13.2.4"],\
+            ["openai", "npm:3.2.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c2b89f79d4814c2d7ab7e04ec67aaf10b73bf30efba1a2c545edb8fb7b0fad33f624c94e9f60efc8b1e8b7453b6a3e704000d1f6e3ec4d891225f003ee2a5336#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"],\
@@ -9967,6 +10011,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["define-lazy-prop", "npm:3.0.0"],\
             ["is-inside-container", "npm:1.0.0"],\
             ["is-wsl", "npm:2.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["openai", [\
+        ["npm:3.2.1", {\
+          "packageLocation": "./.yarn/cache/openai-npm-3.2.1-8bb9cccf51-ef3942e9b5.zip/node_modules/openai/",\
+          "packageDependencies": [\
+            ["openai", "npm:3.2.1"],\
+            ["axios", "npm:0.26.1"],\
+            ["form-data", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
